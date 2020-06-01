@@ -40,7 +40,7 @@ ROBOTSTXT_OBEY = False
 #COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
-#TELNETCONSOLE_ENABLED = False
+TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 #DEFAULT_REQUEST_HEADERS = {
@@ -75,7 +75,7 @@ ITEM_PIPELINES = {
    'manhuadb.pipelines.ManhuadbFilesPipeline': 300,
 }
 
-# FILES_STORE = '.'
+FILES_STORE = '.'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -6,8 +6,6 @@ class ManhuaSpider(scrapy.Spider):
     allowed_domains = ['manhuadb.com']
 
     def start_requests(self):
-        if getattr(self, 'id') is None:
-            raise ValueError('id is not specified')
         return [
             scrapy.Request(
                 f'https://www.manhuadb.com/manhua/{self.id}',
