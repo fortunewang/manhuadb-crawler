@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-class ManhuaSpider(scrapy.Spider):
-    name = 'manhua'
+class ManhuadbSpider(scrapy.Spider):
+    name = 'manhuadb'
     allowed_domains = ['manhuadb.com']
 
     def start_requests(self):

@@ -11,8 +11,8 @@
 
 BOT_NAME = 'manhuadb'
 
-SPIDER_MODULES = ['manhuadb.spiders']
-NEWSPIDER_MODULE = 'manhuadb.spiders'
+SPIDER_MODULES = ['mangacrawler.spiders']
+NEWSPIDER_MODULE = 'mangacrawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -51,13 +51,13 @@ TELNETCONSOLE_ENABLED = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'manhuadb.middlewares.ManhuadbSpiderMiddleware': 543,
+#    'mangacrawler.middlewares.MangaCrawlerSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   # 'manhuadb.middlewares.ManhuadbDownloaderMiddleware': 543,
+   # 'mangacrawler.middlewares.MangaCrawlerDownloaderMiddleware': 543,
    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 1,
 }
 
@@ -72,7 +72,7 @@ RETRY_TIMES = 10
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'manhuadb.pipelines.ManhuadbFilesPipeline': 300,
+   'mangacrawler.pipelines.MangaCrawlerFilesPipeline': 300,
 }
 
 FILES_STORE = '.'

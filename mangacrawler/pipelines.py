@@ -9,7 +9,7 @@ import scrapy
 from urllib.parse import urlparse
 from scrapy.pipelines.files import FilesPipeline
 
-class ManhuadbFilesPipeline(FilesPipeline):
+class MangaCrawlerFilesPipeline(FilesPipeline):
 
     def file_path(self, request, response=None, info=None):
         title = request.meta['title']

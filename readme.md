@@ -1,5 +1,10 @@
-# manhuadb
+# mangacrawler
 
-example:
+manhuadb:
 
-    scrapy crawl manhua -a id=<id> --loglevel=INFO
+    scrapy crawl manhuadb -a id=<manga id> --loglevel=INFO
+
+mangadex:
+
+    scrapy crawl mangadex -a id=<manga id> --loglevel=INFO
+    scrapy crawl mangadex -a id=<manga id> -a chapter=<chapter no> --loglevel=INFO
